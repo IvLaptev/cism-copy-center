@@ -8,7 +8,7 @@ from app.models.document import Document
 router = APIRouter()
 
 @router.get('/', response_model=List[Document], description="Returns all documents with pagination")
-def get_documents(page: int = 1, amount: int = 10, doc_server: DocumentsService = Depends()):
+def get_documents(page: int = 1, amount: int = 10, doc_service: DocumentsService = Depends()):
     if page < 1 or amount < 1:
         raise HTTPException(status_code=400, detail="Fields 'page' and 'amount' can't be less than 1")
-    return doc_server.get_all_documents()[amount * (page - 1):amount * page]
+    return doc_service.get_all_documents()[amount * (page - 1):amount * page]
