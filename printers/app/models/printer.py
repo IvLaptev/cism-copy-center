@@ -6,5 +6,5 @@ from datetime import datetime
 class Printer(BaseModel):
     printer_uuid: UUID
     printer_name: str
-    printer_type: datetime
-    printer_address: datetime
+    printer_type: str
+    printer_address: str

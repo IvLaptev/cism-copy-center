@@ -3,32 +3,32 @@
         {
             "printer_uuid": "1a40c5e6-5dbb-11ed-9b6a-0242ac120002",
             "printer_name": "First doc",
-            "printer_type": "1667545840",
-            "printer_address": "1667718640"
+            "printer_type": "color",
+            "printer_address": "10.11.136.92"
         },
         {
             "printer_uuid": "d82162be-d40b-477e-b2e0-fa5e39ad7935",
             "printer_name": "My template",
-            "printer_type": "1667632494",
-            "printer_address": "1667718894"
+            "printer_type": "black-white",
+            "printer_address": "10.11.136.96"
         },
         {
             "printer_uuid": "e36f29b1-229d-47bd-a8bd-6c65f953c197",
             "printer_name": "NDA",
-            "printer_type": "1667718640",
-            "printer_address": "1667736894"
+            "printer_type": "color",
+            "printer_address": "10.11.136.101"
         },
         {
             "printer_uuid": "4b7e637d-0016-47dd-aa16-6ecf90fc701b",
             "printer_name": "schedule",
-            "printer_type": "1667718640",
-            "printer_address": "1667718640"
+            "printer_type": "black-white",
+            "printer_address": "10.11.136.136"
         },
         {
             "printer_uuid": "22a8667e-4efc-4a21-a56f-871a19334f6f",
             "printer_name": "Ivan",
-            "printer_type": "1667718640",
-            "printer_address": "1667718640"
+            "printer_type": "black-white",
+            "printer_address": "10.11.136.200"
         }
     ]
 }
