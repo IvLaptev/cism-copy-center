@@ -28,4 +28,4 @@
   docker compose up -d --build
 ```
 
-4. Check API with [http://localhost:8080/client](http://localhost:8080)
+4. Check API with [http://localhost:8080/client](http://localhost:8080/client)
