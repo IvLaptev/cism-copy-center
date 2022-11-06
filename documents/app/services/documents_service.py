@@ -11,4 +11,4 @@ documents: List[Document] = json.load(open(f'{settings.path_to_data}'))['documen
 
 class DocumentsService():
     def get_all_documents(self) -> List[Document]:
-        return documents
+        return sorted(documents, key=lambda d: d['document_name']) 
