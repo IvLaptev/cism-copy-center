@@ -1,0 +1,39 @@
+{
+    "$schema": "https://www.krakend.io/schema/v3.json",
+    "version": 3,
+    "host": [
+        "http://documents:5001",
+        "http://printers:5002"
+    ],
+    "endpoints": [
+        {
+            "endpoint": "/client",
+            "method": "GET",
+            "backend": [
+                {
+                    "url_pattern": "/documents",
+                    "host": [
+                        "http://documents:5001"
+                    ],
+                    "method": "GET",
+                    "is_collection": true,
+                    "mapping": {
+                        "collection": "documents"
+                    }
+                },
+                {
+                    "url_pattern": "/printers",
+                    "host": [
+                        "http://printers:5002"
+                    ],
+                    "method": "GET",
+                    "is_collection": true,
+                    "mapping": {
+                        "collection": "printers"
+                    }
+                }
+            ]
+        }
+    ],
+    "extra_config": {}
+}
