@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  krakned:
+    image: devopsfaith/krakend:watch
+    ports:
+      - 8080:8080
+    volumes:
+      - ./deploy:/etc/krakend
+    depends_on:
+      - documents
+      - printers
+    command: ["run", "-d", "-c", "/etc/krakend/krakend.json"]
+
+  documents:
+    build: ./documents
+    ports:
+      - 5001:5001
+    environment:
+      - PORT=5001
+
+  printers:
+    build: ./printers
+    ports:
+      - 5002:5002
+    environment:
+      - PORT=5002

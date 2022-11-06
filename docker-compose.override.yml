@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  documents:
+    environment:
+      - PATH_TO_DATA=data.json
+
+  printers:
+    environment:
+      - PATH_TO_DATA=data.json
